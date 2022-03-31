@@ -1,0 +1,216 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #000000;
+    color: seashell;
+}
+nav{
+    position: fixed;
+    top: 0;
+    right: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+nav a {
+    color: seashell;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+a:hover {
+    border-bottom: 2px solid seashell;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.firstName {
+    color: #23455E;
+    font-size: 135px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+.lastName {
+    color: #23455E;
+    font-size: 135px;
+    position: absolute;
+    bottom: 0px;
+    right: 300px;
+}
+.logo {
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    margin-bottom: 300px;
+}
+.flexboxContainer {
+    display: flex;
+    justify-content: center;
+}
+.flexboxItem {
+    padding-left: 80px;
+    min-height: 200px;
+    max-width: 800px;
+}
+.subheader {
+    text-align: center;
+    padding-right: 1299px;
+}
+.bodyText {
+    position: absolute;
+    top: 60px;
+    left: 300px;
+}
+p {
+    font-size: 20px;
+}
+h2 {
+    font-size: 35px;
+}
+#contact {
+    font-size: 135px;
+}
+footer {
+    background-color: #333333;
+    color: seashell;
+    text-align: right;
+    padding: 30px 60px 30px 0;
+}
+
+/*= Skills */
+.skillbar-wrapper {
+    margin: 1.5em auto;
+    max-width: 960px;
+}
+.skillbar {
+    position:relative;
+    transform: translate(0px, -62px);
+    margin-bottom: 35px;
+    width: 83%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+}
+.skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    width:110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin: 0;
+}
+.skillbar-title span {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height:35px;
+    line-height: 35px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+.skillbar-bar {
+    height: 35px;
+    width: 0%;
+    border-radius: 3px;
+    transition: 500ms linear;
+    transition-property: width, background-color;
+}
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: rgba( 0, 0, 0, 0.4 );
+    transition: color 500ms ease-out;
+}
+.complete .skill-bar-percent {
+    color: #333;
+}
+.skillbar-title {
+    background: #23455E;
+}
+
+.skillbar-bar {
+    background: #6AA4C7;
+}
+
+/* Animation stuff */
+.fade-in-image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+.slide-right {
+    width: 100%;
+    overflow: hidden;
+    margin-left: 300px;
+    max-width: 500px
+}
+
+.slide-right h2 {
+    font-size: 115px;
+    animation: 1s slide-right 2s forwards;
+    transform:translateX(-100%);
+}
+
+@keyframes slide-right {
+    to {
+        transform:translateX(0);
+    }
+}
+.slide-left {
+    width: 100%;
+    overflow: hidden;
+    margin-left: 300px;
+    max-width: 800px
+}
+
+.slide-left h2 {
+    font-size: 115px;
+    animation: 1s slide-left 2s forwards;
+    transform:translateX(100%);
+}
+
+@keyframes slide-left {
+    to {
+        transform:translateX(0);
+    }
+}
