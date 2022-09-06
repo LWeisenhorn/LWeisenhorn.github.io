@@ -2,114 +2,187 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Luke Weisenhorn's site</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script src="index.js"></script>
+    <script src="codepen.js"></script> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
+
+    <title>Luke Weisenhorn's Website</title>
 </head>
-<header style="padding-top: 100px"></header>
-<body>
-<a id="top"></a>
-<nav>
-    <a href="#top">HOME</a>
-    <a href="#projects">LATEST PROJECTS</a>
-    <a href="#contact">WORK WITH ME</a>
-</nav>
-
-<!-- Allows name to be overlaid on logo -->
-<div class="container">
-    <img class="logo fade-in-image" src="logo.jpg" alt="logo">
-    <div class="slide-right firstName"><h2>LUKE</h2></div>
-    <div class="slide-left lastName"><h2>WEISENHORN</h2></div>
-</div>
-
-<div class="flexboxContainer">
-    <div class="flexboxItem" style="padding-left: 0"><h2>INTRO</h2></div>
-    <div class="flexboxItem" style="padding-top: 15px"><p>Hi, my name is Luke Weisenhorn, and I am a Computer Science major and Mathematics minor starting my 3rd year at UNC Charlotte.
-        I am particularly interested in Data Science and Software Engineering. Outside of school I enjoy kayaking, rock climbing, and camping.</p></div>
-    <div class="flexboxItem">
-        <h2>STAY UPDATED</h2>
-        <a>MY RESUME →</a>
-    </div>
-</div>
-
-<div class="flexboxContainer">
-    <div class="flexboxItem" style="padding-left: 0"><h2>WHAT I DO</h2></div>
-    <div class="flexboxItem" style="padding: 15px 418px 0 80px"><p>Hi, my name is Luke Weisenhorn, and I am a Computer Science major and Mathematics minor starting my 3rd year at UNC Charlotte.
-        I am particularly interested in Data Science and Software Engineering. Outside of school I enjoy kayaking, rock climbing, and camping.</p></div>
-</div>
-
-<h2 class="subheader">MY SKILLS</h2>
-<div class="skillbar-wrapper">
-    <div class="skillbar clearfix" data-percent="95%">
-        <h4 class="skillbar-title"><span>JAVA</span></h4>
-        <div class="skillbar-bar"></div>
-        <div class="skill-bar-percent">95%</div>
+<body onload="animate()">
+    <div id="top"></div>
+    <div id="large-header" class="large-header">
+        <canvas id="demo-canvas"></canvas>
+        <div id="introText">
+            <h1>Hi I am</h1>
+            <h1 id="nameText">Luke Weisenhorn;</h1>
+            <h2><i>Computer Science Student at UNCC</i></h2>
+        </div>
+        
     </div>
 
-    <div class="skillbar clearfix" data-percent="90%">
-        <h4 class="skillbar-title"><span>HTML/CSS</span></h4>
-        <div class="skillbar-bar"></div>
-        <div class="skill-bar-percent">90%</div>
+    <div id="rightNav">
+        <ul>
+            <li><a href="https://github.com/LWeisenhorn"><img src="sources/img/github.png" alt="Github Logo" width="75px"></a></li>
+            <li><a href="https://www.linkedin.com/in/luke-weisenhorn/"><img src="sources/img/linkedin.png" alt="LinkedIn Logo" width="75px"></a></li>
+            <li><a href="mailto:lukeweisenhorn@gmail.com"><img src="sources/img/email.png" alt="LinkedIn Logo" width="75px"></a></li>
+        </ul>
     </div>
 
-    <div class="skillbar clearfix" data-percent="75%">
-        <h4 class="skillbar-title"><span>JAVASCRIPT</span></h4>
-        <div class="skillbar-bar"></div>
-        <div class="skill-bar-percent">75%</div>
+    <h3 class="scrollLine" style="top: 91vh;">About Me</h3>
+    <img src="sources/img/scrollLine.png" alt="decor line" class="scrollLine" style="width: 75px; height: 5vh;">
+
+    <div id="about"></div>
+    <div id="aboutMe" style="margin-top: 90px;">
+        <div id="aboutText">
+            <h1 style="color: #92BA92">About Me</h1>
+            <p>I'm Luke Weisenhorn, a Computer Science major with a concentration in Software Engineering and Mathematics minor at UNC Charlotte.
+                I will be starting my third year in the fall. I am very passionate about computing and have dedicated this website to showcasing my projects I have created.</p>
+            <p>I primarily work with back-end projects, however, I have honed my front-end skills through coursework and the creation of this website.</p>
+            <p>When I'm not working, I love to spend my time in the outdoors. I enjoy kayaking, rock climbing, and camping.</p>
+            <button><a href="sources/pdf/Luke Weisenhorn's Resumé.pdf" target="_blank">My Resume</a></button>
+        </div>
+        <div style="display: inline-block; vertical-align: top;">
+            <img src="sources/img/LukeWeisenhorn.webp" alt="Luke Weisenhorn" width="500px" id="aboutPic">
+        </div>
     </div>
 
-    <div class="skillbar clearfix" data-percent="80%">
-        <h4 class="skillbar-title"><span>PYTHON</span></h4>
-        <div class="skillbar-bar"></div>
-        <div class="skill-bar-percent">80%</div>
+    <div id="experience"></div>
+    <div style="width: 800px; margin: 100px auto auto;">
+
+        <div style="width: 900px; margin: 100px auto auto; position: relative; left: -50px">
+            <h1 style="color: #92BA92">Experience</h1>
+        </div>
+
+        <div>
+            <div style="position: absolute;">
+                <div id="dotStructure">
+                    <div class="circle"></div>
+                    <div class="smallCircle"></div>
+                    <div class="rectangle"></div>
+                    <div class="circle"></div>
+                    <div class="smallCircle"></div>
+                    <div class="rectangle"></div>
+                    <div class="circle"></div>
+                    <div class="smallCircle"></div>
+                </div>
+            </div>
+            
+            <div style="display: inline-block;">
+                <div class="exp-container" style="margin-left:200px; ">
+                    <div>
+                        <h2>Software Engineering TA [2022]</h2>
+                        <p>My professor offered me a postion to be a Teaching Assistant under him the semester after taking this course. 
+                            In addition to grading papers, I am to take charge in class discussions, advise students, and hold my own office hours. 
+                            The topics I am expected to assist in this course are: Agile development, Python, HTML, CSS, JavaScript, and software planning diagrams.
+                        </p>
+                    </div>
+                </div>
+                <div class="exp-container" style="margin-left:200px;">
+                    <div>
+                        <h2>Bank of America Summer Analyst [2022]</h2>
+                        <p>In this position, I worked under the Enterprise Finance and Treasury Team in the Core Technology and Infrastructure line of business. 
+                            I was tasked to communicate with other teams to figure out application requirements and write them in formal documents with the use of Microsoft
+                            Word and Excel. I would then take the documents and go through the approval process and allow the application to begin development.
+                            Finally, I performed a complete audit of my team's applications to ensure that everything was where it was intended to be and present.
+                        </p>
+                    </div>
+                </div>
+                <div class="exp-container" style="margin-left:200px;">
+                    <div>
+                        <h2>Bank of America FinTech Conference [2021]</h2>
+                        <p>I attended a conference on the importance of Diversity and Inclusion through Bank of America. In this conference, I was able to
+                            go to several meetings where I gained insight on many different perspectives from unique people. The meetings lasted for two weeks, and within
+                            that time frame I was also able to meet with industry experts within the technology department at Bank of America and learn more about different
+                            careers within the technology sector.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="tech"></div>
+    <div style="width: 900px; margin: 100px auto auto;">
+        <h1 style="color: #92BA92">Technology</h1>
+        <p>Below is a list of the languages I use most frequently in my projects.</p>
+        <div class="flex-container">
+            <div id="Java" onclick=swapCards(Java)>Java
+                <br><br><img src="https://cdn-icons-png.flaticon.com/128/152/152760.png" alt="Java Image" class="center"></div>
+            <div id="Python" onclick=swapCards(Python)>Python
+                <br><br><img src="https://cdn-icons-png.flaticon.com/128/1822/1822920.png" alt="Python Image" class="center"></div>
+            <div id="SQL" onclick=swapCards(SQL)>MySQL
+                <br><br><img src="https://cdn-icons-png.flaticon.com/128/288/288882.png" alt="MySQL Image" class="center"></div>
+        </div>
+        <div class="flex-container">
+            <div id="Javascript" onclick=swapCards(Javascript)>JavaScript
+                <br><br><img src="https://cdn-icons-png.flaticon.com/512/288/288877.png" alt="JS Image" class="center" style="width: 130px;"></div>
+            <div id="HTML" onclick=swapCards(HTML)>HTML
+                <br><br><img src="https://cdn-icons-png.flaticon.com/128/1051/1051328.png" alt="HTML Image" class="center"></div>
+            <div id="CSSlang" onclick=swapCards(CSSlang)>CSS
+            <br><br><img src="https://cdn-icons-png.flaticon.com/128/732/732007.png" alt="CSS Image" class="center"></div>
+        </div>
     </div>
 
-    <div class="skillbar clearfix" data-percent="85%">
-        <h4 class="skillbar-title"><span>SQL</span></h4>
-        <div class="skillbar-bar"></div>
-        <div class="skill-bar-percent">85%</div>
-    </div>
-
-    <div class="skillbar clearfix" data-percent="60%">
-        <h4 class="skillbar-title"><span>C</span></h4>
-        <div class="skillbar-bar"></div>
-        <div class="skill-bar-percent">60%</div>
-    </div>
-
-    <div class="skillbar clearfix" data-percent="65%">
-        <h4 class="skillbar-title"><span>GIT</span></h4>
-        <div class="skillbar-bar"></div>
-        <div class="skill-bar-percent">65%</div>
-    </div>
-</div>
-
-<a id="projects"></a>
-<h1 style="text-align: center; padding-top: 100px;">SELECTED PROJECTS</h1>
-<!-- Project one -->
-<h1>8 bit CPU/computer</h1>
-<h1>Bulk file Sorter</h1>
-<h1>Discord Poetry Bot</h1>
-<h1 style="padding-bottom: 4000px">Logic Gate Visualizer</h1>
-
-<a id="#contact"></a>
-<div class="flexboxContainer" style="padding-bottom:400px">
-    <div class="flexboxItem" style="padding-left: 0">
-        <h1 id="contact">SAY HELLO</h1>
-        <a style="margin-left: 600px">LinkedIn →</a>
-        <a style="margin-left: 15px">Github →</a>
+    <div id="projects"></div>
+    <h1 style="width: 900px; margin: 100px auto auto; margin-bottom: -70px; color: #92BA92">My Latest Works</h1>
+    <div class="project one" style="left: 30px;" onmouseover="writeProjNum(1)" onmouseleave="hideProjNum(1)">
+        <h1 class="projectNumOdd" id="proj1">01</h1>
+        <div class="projectTextOdd" id="proj1bg">
+            <h2>Architecture Tracking System</h2>
+            <p><i>Bank of America Project</i></p>
+            <button>See Description</button>
+        </div>
 
     </div>
-
-    <div class="flexboxItem">
-        <h2 style="padding-top: 80px">WANT TO TALK MORE?</h2>
-        <a>Email →</a>
-        <a style="margin-left: 15px">Phone Number →</a><br>
-        <img style="margin-left:100px; padding-top: 150px" src="logo.jpg" width="200" alt="picture of Luke Weisenhorn">
+    <div class="project two" style="right: 30px;" onmouseover="writeProjNum(2)" onmouseleave="hideProjNum(2)">
+        <h1 class="projectNumEven" id="proj2">02</h1>
+        <div class="projectTextEven" id="proj2bg">
+            <h2>Online Logic Gate Simulator</h2>
+            <p><i>Personal Project</i></p>
+            <button>See Repository</button>
+            <button>See Live Site</button>
+        </div>
     </div>
-</div>
+    <div class="project three" style="left: 30px;" onmouseover="writeProjNum(3)" onmouseleave="hideProjNum(3)">
+        <h1 class="projectNumOdd" id="proj3">03</h1>
+        <div class="projectTextOdd" id="proj3bg">
+            <h2>8-Bit CPU Design</h2>
+            <p><i>School Project</i></p>
+            <button><a href="CPU.html">See Designs</a></button>
+        </div>
+    </div>
+    <div class="project four" style="right: 30px;" onmouseover="writeProjNum(4)" onmouseleave="hideProjNum(4)">
+        <h1 class="projectNumEven" id="proj4">04</h1>
+        <div class="projectTextEven" id="proj4bg">
+            <h2>Traveling Knight Problem</h2>
+            <p><i>Personal Project [WIP]</i></p>
+            <button>See Repository</button>
+            <button onclick="unfinishedProject()">See Live Site</button>
+        </div>
+    </div>
 
-</body>
-<footer>
-Powered by Luke Weisenhorn
-</footer>
+    <div id="topBar">
+        <img src="sources/img/logo.png" alt="My Logo" width="125px">
+        <nav id="mainNav">
+            <a href="#top">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#tech">Tech</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </div>
+    </body>
+    <footer>
+        <a href="#top"><img src="sources/img/logo.png" alt="My Logo" width="200px" title="Scroll to top"></a><br>
+        <div id="footerSocials">
+            <a href="https://github.com/LWeisenhorn"><img src="sources/img/github.png" alt="Github Logo" width="30px"></a>
+            <a href="https://www.linkedin.com/in/luke-weisenhorn/"><img src="sources/img/linkedin.png" alt="LinkedIn Logo" width="30px"></a>
+            <a href="mailto:lukeweisenhorn@gmail.com"><img src="sources/img/email.png" alt="LinkedIn Logo" width="30px"></a>
+        </div>
+        <p>Copyright 2022 Luke Weisenhorn</p>
+    </footer>
 </html>
