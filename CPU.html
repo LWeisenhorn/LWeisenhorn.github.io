@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <head>
     <title>CPU Project</title>
+    <link rel="stylesheet" href="details.css">
 </head>
 <body>
-    <h1>8 Bit CPU</h1>
-    <p>This is a semester long project I worked on during my ITSC 3181 course, Introduction to Computer Architecture.
-        This course had a focus on understanding how low level programming languages like assembly and specifically
-        RISC-V worked. A large segment of this class was designing a CPU to perform basic operations and thoeretically
-        take code inputs to properly function.
-    </p>
-    <h2>The Design</h2>
-    <p>I built the CPU using an virtual circuit builder and started from scratch building each component.
-        To make the circuits more readable, I saved each smaller segment like the ALU, Arithmatic Logic Unit, as it's own circuit
-        and imported it back into the main circuit. Each imported circuit is represented by a large yellow square on the diagram with a label. Due to website
-        storage concerns, I will not be able to show each individual circuit.
-    </p>
-    <img src="sources/img/myCPU.png" alt="My CPU Design">
-    <p>Above you can see my design I made for my CPU. I modeled it off of a simple CPU that is pictured below.</p>
-    <img src="sources/img/theoreticalCPU.png" alt="CPU theory design">
+    <div id="topBar">
+        <img src="sources/img/logo.png" alt="My Logo" width="125px">
+        <nav id="mainNav">
+            <a href="index.html#projects">← Return to Main Page</a>
+        </nav>
+    </div>
+    <div id="infoContainer">
+        <h1 id="title" class="subheader">8-Bit CPU</h1>
+        <p>This is a semester long project I worked on during my ITSC 3181 course, Introduction to Computer Architecture.
+            This course had a focus on understanding how low level programming languages like assembly and specifically
+            RISC-V worked. A large segment of this class was designing a CPU to perform basic operations and thoeretically
+            take code inputs to properly function.
+        </p>
+        <h2 class="subheader">The Design</h2>
+        <p>I built the CPU using an virtual circuit builder and started from scratch building each component.
+            To make the circuits more readable, I saved each smaller segment like the ALU, Arithmatic Logic Unit, as it's own circuit
+            and imported it back into the main circuit. Each imported circuit is represented by a large yellow square on the diagram with a label. Due to website
+            storage concerns, I will not be able to show each individual circuit.
+        </p>
+        <img src="sources/img/myCPU.png" alt="My CPU Design">
+        <p>Above you can see my design I made for my CPU. I modeled it off of a simple CPU that is pictured below.</p>
+        <img src="sources/img/theoreticalCPU.png" alt="CPU theory design">
+        <h2 class="subheader">Technology Used</h2>
+        
+    
+        <div id="technology" class="flex-container">
+            <div><img src="https://cdn.icon-icons.com/icons2/1990/PNG/512/chipcircuitcomputerintegratedmemorymicroprocessorprocessor_123068.png" alt="Circuit Image" style="width: 60px;">
+                <br>Circuit Simulator</div>
+        </div>
+    </div>
+    
+    <footer>
+        <a href="#top"><img src="sources/img/logo.png" alt="My Logo" width="200px" title="Scroll to top"></a><br>
+        <div id="footerSocials">
+            <a href="https://github.com/LWeisenhorn"><img src="sources/img/github.png" alt="Github Logo" width="30px"></a>
+            <a href="https://www.linkedin.com/in/luke-weisenhorn/"><img src="sources/img/linkedin.png" alt="LinkedIn Logo" width="30px"></a>
+            <a href="mailto:lukeweisenhorn@gmail.com"><img src="sources/img/email.png" alt="LinkedIn Logo" width="30px"></a>
+        </div>
+        <p>Copyright 2022 Luke Weisenhorn</p>
+    </footer>
 </body>
 </html>

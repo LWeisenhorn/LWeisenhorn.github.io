@@ -1,0 +1,113 @@
+#topBar {
+    position: absolute;
+    padding-right: 20px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: #F3EBCA;
+}
+#topBar > img {
+    float: right;
+}
+#mainNav {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    margin-top: 15px;
+    font-size: 22px;
+
+}
+#mainNav > a {
+    color: #3A3A3A;
+    text-decoration: none;
+    margin-right: 0px;
+    margin-left: 30px;
+}
+#mainNav > a:hover {
+    border-bottom: 2px solid #3A3A3A;
+}
+#title {
+    font-size: 50px;
+}
+.subheader {
+    color: #92BA92;
+    font-size: 30px;
+}
+body {
+    background-color: #3A3A3A;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+#infoContainer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 80px;
+    width: 850px;
+    margin: auto;
+}
+#infoContainer > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#technology {
+    padding-bottom: 40px;
+    margin-top: 80px;
+    width: 850px;
+    margin: auto;
+}
+#technology > div {
+    width: 140px;
+    margin: auto;
+}
+#technology > div > img {
+    padding-top: 10px;
+}
+.flex-container {
+    display: flex;
+    width: 900px;
+}
+.flex-container > div {
+    color: black;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+#buttons {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+button {
+    background-color: #92BA92;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 6px 12px 6px 12px;
+}
+button > a {
+    text-decoration: none;
+    color: white;
+}
+footer {
+    text-align: center;
+    color: black;
+    background-color: #F3EBCA;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+#fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+#footerSocials > a {
+    margin-left: 5px;
+    margin-right: 5px;
+}

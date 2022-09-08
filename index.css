@@ -4,12 +4,12 @@ html {
 .large-header {
 	position: relative;
 	width: 100vw;
-	background: #b5a690;
+	background: #D1C9A8;
 	background-position: center center;
     
 }
 #introText {
-    color: white;
+    color: black;
 }
 #nameText {
     font-size: 50px;
@@ -96,7 +96,7 @@ li > a {
     margin-bottom: 0px;
 }
 .scrollLine {
-    color: white;
+    color: black;
     padding: 0;
     position: absolute;
     left: 50vw;
@@ -258,7 +258,7 @@ button {
     background-position: center;
 }
 .three {
-    background-image: url("sources/img/myCPU.png");
+    background-image: url("sources/img/circuit");
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: center;
@@ -292,7 +292,7 @@ input {
 footer {
     text-align: center;
     color: black;
-    background-color: #b5a690;
+    background-color: #D1C9A8;
     padding-bottom: 20px;
     padding-top: 50px;
 }

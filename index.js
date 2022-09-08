@@ -41,13 +41,13 @@ function writeProjNum(projNum) {
         let proj = document.getElementById("proj3");
         let projBg = document.getElementById("proj3bg");
         proj.style.color = '#92BA92';
-        projBg.style.backgroundColor = 'rgba(200, 200, 200, 0.8)'
+        projBg.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'
     }
     else if(projNum === 4) {
         let proj = document.getElementById("proj4");
         let projBg = document.getElementById("proj4bg");
         proj.style.color = '#92BA92';
-        projBg.style.backgroundColor = 'rgba(200, 200, 200, 0.8)'
+        projBg.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'
     }
     else {
         return;
