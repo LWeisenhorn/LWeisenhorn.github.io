@@ -245,26 +245,26 @@ button {
     right: 50px;
 }
 .one {
-    background-image: url("sources/img/bofa");
+    background-image: url("../sources/img/bofa");
     background-size: 90%;
     background-position: center;
 
 
 }
 .two {
-    background-image: url("sources/img/logicGateSingle.png");
+    background-image: url("../sources/img/logicGateSingle.png");
     background-size: 50%;
     background-repeat: repeat-x;
     background-position: center;
 }
 .three {
-    background-image: url("sources/img/circuit");
+    background-image: url("../sources/img/circuit");
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: center;
 }
 .four {
-    background-image: url("sources/img/knight");
+    background-image: url("../sources/img/knight");
     background-size: 50%;
     background-repeat: repeat-x;
     background-position: center;
