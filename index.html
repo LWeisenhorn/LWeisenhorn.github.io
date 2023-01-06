@@ -2,191 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Hi Welcome to Luke Weisenhorn's Software Engineering Portfolio Website. " />
-    <meta name="keywords" content="Software Engineer Computer Science UNC Charlotte" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link href="lweisenhorn.github.io" rel="canonical" />
-    <link  rel="icon" href="sources/images/logo.png">
-    <link rel="stylesheet" href="CSS/index.css">
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-    <script src="JavaScript/index.js"></script>
-    <script src="JavaScript/codepen.js"></script> 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
-
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/animation.css">
+    <script src="JavaScript/button.js"></script>
     <title>Luke Weisenhorn's Website</title>
 </head>
-<body onload="animate()">
-    <div id="top"></div>
-    <div id="large-header" class="large-header">
-        <canvas id="demo-canvas"></canvas>
-        <div id="introText">
-            <h1>Hi I am</h1>
-            <h1 id="nameText">Luke Weisenhorn;</h1>
-            <h2><i>Computer Science Student at UNCC</i></h2>
+<body>
+    <div id="introductionBox">
+        <h1>Luke Weisenhorn</h1>
+        <h2>Junior Software Engineer</h2>
+        <p>I am a senior at UNC Charlotte majoring in Computer Science with a minor in Mathematics.
+            I also work as a Full-Stack Developer outside of class. All of my projects are built solely
+            by me, from the planning phase to the deployment phase. I have a passion for all things
+            puzzle related, programming included, and made this website to showcase my work. For more
+            information please look at my <a href="pdf/Luke Weisenhorn's resume.pdf">resume</a> or my <a href="https://www.linkedin.com/in/luke-weisenhorn/">LinkedIn</a>.
+        </p>
+    </div>
+    
+
+    <div class="flex-container">
+        <div>
+            <div class="overlay">
+                <a class="pseudover v2"  title="Learn More" href="html/BoFA.html">
+                    <img src="images/bankOfAmerica.jpg" width="280px" height="146px">
+                </a>
+            </div>
+            <h3>Architecture Tracking Software</h3>
+            <p class="lang-text" id="excelBorder"><img class="lang-icon" src="images/icons/excel.png" alt="Excel Icon" height="15px">Excel</p>
+            <p class="lang-text" id="vbBorder"><img class="lang-icon" src="images/icons/visualBasic.png" alt="VisualBasic Icon" height="15px">Visual Basic</p>
         </div>
+        <div>
+            <div class="overlay">
+                <a class="pseudover v2"  title="Learn More"  href="html/fileSorter.html">
+                    <img src="images/terminal.png" width="280px" height="146px">
+                </a>
+            </div>
+            <h3>Automated File Sorter</h3>
+            <p class="lang-text" id="pythonBorder"><img class="lang-icon" src="images/icons/python.png" alt="Python Icon" height="15px">Python</p>
+            <p class="lang-text"><img class="lang-icon" src="images/terminal.png" alt="Shell Icon" height="15px" width="15px">Shell</p>
+        </div>
+        <div>
+            <div class="overlay">
+                <a class="pseudover v2"  title="Learn More"  href="html/logicGate.html">
+                    <img src="images/logicgate.png" width="280px" height="146px">
+                </a>
+            </div>
+            <h3>Logic Gate Simulator</h3>
+            <p class="lang-text" id="javascriptBorder"><img class="lang-icon" src="images/icons/javascript.png" alt="JavaScript Icon" height="15px">JavaScript</p>
+            <p class="lang-text" id="htmlBorder"><img class="lang-icon" src="images/icons/html.png" alt="HTML Icon" height="15px">HTML</p>
+            <p class="lang-text" id="cssBorder"><img class="lang-icon" src="images/icons/css.png" alt="CSS Icon" height="15px">CSS</p>
+        </div>  
+    </div>
+
+    <div id="timelineDiv">
+        <h2 class="header">Work History</h2>
+        <div style="position: relative; float: left;">
+            <div style="position: absolute;" class="bigCircle"></div>
+            <div style="position: relative; top: 7px; left: 7px;" class="smallCircle"></div>
+            <div style="position: relative; background-color: white; width: 10px; height: 75px; left: 10px; top: 9px;"></div>
+        </div>
+        <h3>Software Engineering Intern</h3>
+        <h4 class="subheader">Bank of America (June 2023 - Aug 2023)</h4>
+        <p>The team specifics are to be determined closer to start date</p>
+        <br>
+
+        <div style="position: relative; float: left; top: 20px; right: 15px;">
+            <div style="position: absolute;" class="bigCircle"></div>
+            <div style="position: relative; top: 7px; left: 7px;" class="smallCircle"></div>
+            <div style="position: relative; background-color: white; width: 10px; height: 150px; left: 10px; top: 9px;"></div>
+        </div>
+        <h3>Software Engineering Teaching Assistant</h3>
+        <h4 class="subheader">UNC Charlotte (August 2022 - December 2022)</h4>
+        <ul><li>Developed and implemented lesson plans for in-class instruction</li>
+            <li>Assisting the Professor in keeping records, such as grades and attendance</li>
+            <li>Tutoring students on multiple technology products and processes</li>
+            <li>Responsible for communicating concerns of students to faculty</li>
+        </ul>
+        <br>
+
+        <div style="position: relative; float: left; top: 20px;">
+            <div style="position: absolute;" class="bigCircle"></div>
+            <div style="position: relative; top: 7px; left: 7px;" class="smallCircle"></div>
+        </div>
+        <h3>Technology Analyst Intern</h3>
+        <h4 class="subheader">Bank of America (June 2022 - August 2022)</h4>
+        <ul>
+            <li>Acted as a point of contact between several teams during application development</li>
+            <li>Responsible for technology analysis across three lines of business</li>
+            <li>Drafted documentation for the basis of various applications such as Business and Technical requirement documents</li>
+            <li>Conducted an audit on all project work for Global Finance and Treasury and recommended solutions to close gaps and communicated findings to Design Team Leads and Chief Engineers to usher team members to refactor their project files</li>
+            <li>Participated and offered feedback on in-flight infrastructure</li>
+        </ul>
         
     </div>
-
-    <div id="rightNav">
-        <ul>
-            <li><a href="https://github.com/LWeisenhorn"><img src="sources/img/github.png" alt="Github Logo" width="75px"></a></li>
-            <li><a href="https://www.linkedin.com/in/luke-weisenhorn/"><img src="sources/img/linkedin.png" alt="LinkedIn Logo" width="75px"></a></li>
-            <li><a href="mailto:lukeweisenhorn@gmail.com"><img src="sources/img/email.png" alt="LinkedIn Logo" width="75px"></a></li>
-        </ul>
-    </div>
-
-    <h3 class="scrollLine" style="top: 91vh;">About Me</h3>
-    <img src="sources/img/scrollLine.png" alt="decor line" class="scrollLine" style="width: 75px; height: 5vh;">
-
-    <div id="about"></div>
-    <div id="aboutMe" style="margin-top: 90px;">
-        <div id="aboutText">
-            <h1 style="color: #92BA92">About Me</h1>
-            <p>I'm Luke Weisenhorn, a Computer Science major with a concentration in Software Engineering and Mathematics minor at UNC Charlotte.
-                I will be starting my third year in the fall. I am very passionate about computing and have dedicated this website to showcasing my projects I have created.</p>
-            <p>I primarily work with back-end projects, however, I have honed my front-end skills through coursework and the creation of this website.</p>
-            <p>When I'm not working, I love to spend my time in the outdoors. I enjoy kayaking, rock climbing, and camping.</p>
-            <button><a href="../sources/pdf/Luke Weisenhorn's Resume.pdf" target="_blank">My Resume</a></button>
+    <div id="toolsDiv">
+        <div id="toolsTitle">
+            <h2 class="header">Technology I Use</h2>
+            <button id="langButton" class="active toolButton" onclick="showLangs()">Languages</button>
+            <button id="frameworkButton" class="toolButton" onclick="showFrameworks()">Frameworks</button>
+            <button id="otherButton" class="toolButton" onclick="showOther()">Other</button> 
         </div>
-        <div style="display: inline-block; vertical-align: top;">
-            <img src="sources/img/LukeWeisenhorn.webp" alt="Luke Weisenhorn" width="500px" id="aboutPic">
-        </div>
-    </div>
-
-    <div id="experience"></div>
-    <div style="width: 800px; margin: 100px auto auto;">
-
-        <div style="width: 900px; margin: 100px auto auto; position: relative; left: -50px">
-            <h1 style="color: #92BA92">Experience</h1>
-        </div>
-
-        <div>
-            <div style="position: absolute;">
-                <div id="dotStructure">
-                    <div class="circle"></div>
-                    <div class="smallCircle"></div>
-                    <div class="rectangle"></div>
-                    <div class="circle"></div>
-                    <div class="smallCircle"></div>
-                    <div class="rectangle"></div>
-                    <div class="circle"></div>
-                    <div class="smallCircle"></div>
-                </div>
+        
+        <div class="flex-container" id="toolsFlexBox">
+            <!-- languages -->
+            <div>
+                <img src="images/icons/python.png" alt="Python logo" width="60px">
+                <p>Python</p>
             </div>
-            
-            <div style="display: inline-block;">
-                <div class="exp-container" style="margin-left:200px; ">
-                    <div>
-                        <h2>Software Engineering TA [2022]</h2>
-                        <p>My professor offered me a postion to be a Teaching Assistant under him the semester after taking this course. 
-                            In addition to grading papers, I am to take charge in class discussions, advise students, and hold my own office hours. 
-                            The topics I am expected to assist in this course are: Agile development, Python, HTML, CSS, JavaScript, and software planning diagrams.
-                        </p>
-                    </div>
-                </div>
-                <div class="exp-container" style="margin-left:200px;">
-                    <div>
-                        <h2>Bank of America Summer Analyst [2022]</h2>
-                        <p>In this position, I worked under the Enterprise Finance and Treasury Team in the Core Technology and Infrastructure line of business. 
-                            I was tasked to communicate with other teams to figure out application requirements and write them in formal documents with the use of Microsoft
-                            Word and Excel. I would then take the documents and go through the approval process and allow the application to begin development.
-                            Finally, I performed a complete audit of my team's applications to ensure that everything was where it was intended to be and present.
-                        </p>
-                    </div>
-                </div>
-                <div class="exp-container" style="margin-left:200px;">
-                    <div>
-                        <h2>Bank of America FinTech Conference [2021]</h2>
-                        <p>I attended a conference on the importance of Diversity and Inclusion through Bank of America. In this conference, I was able to
-                            go to several meetings where I gained insight on many different perspectives from unique people. The meetings lasted for two weeks, and within
-                            that time frame I was also able to meet with industry experts within the technology department at Bank of America and learn more about different
-                            careers within the technology sector.
-                        </p>
-                    </div>
-                </div>
+            <div>
+                <img src="images/icons/javascript.png" alt="JavaScript logo" width="60px">
+                <p>JavaScript</p>
             </div>
-            
+            <div>
+                <img src="images/icons/c.png" alt="C logo" width="60px">
+                <p>C</p>
+            </div>
+            <div>
+                <img src="images/icons/c++.png" alt="C++ logo" width="60px">
+                <p>C++</p>
+            </div>
+            <div>
+                <img src="images/icons/java.png" alt="Java logo" width="60px">
+                <p>Java</p>
+            </div>
+            <div>
+                <img src="images/icons/database.png" alt="Database logo" width="60px">
+                <p>NoSQL/MySQL</p>
+            </div>
         </div>
     </div>
-    <div id="tech"></div>
-    <div style="width: 900px; margin: 100px auto auto;">
-        <h1 style="color: #92BA92">Technology</h1>
-        <p>Below is a list of the languages I use most frequently in my projects.</p>
-        <div class="flex-container">
-            <div id="Java" onclick=swapCards(Java)>Java
-                <br><br><img src="https://cdn-icons-png.flaticon.com/128/152/152760.png" alt="Java Image" class="center"></div>
-            <div id="Python" onclick=swapCards(Python)>Python
-                <br><br><img src="https://cdn-icons-png.flaticon.com/128/1822/1822920.png" alt="Python Image" class="center"></div>
-            <div id="SQL" onclick=swapCards(SQL)>MySQL
-                <br><br><img src="https://cdn-icons-png.flaticon.com/128/288/288882.png" alt="MySQL Image" class="center"></div>
-        </div>
-        <div class="flex-container">
-            <div id="Javascript" onclick=swapCards(Javascript)>JavaScript
-                <br><br><img src="https://cdn-icons-png.flaticon.com/512/288/288877.png" alt="JS Image" class="center" style="width: 130px;"></div>
-            <div id="HTML" onclick=swapCards(HTML)>HTML
-                <br><br><img src="https://cdn-icons-png.flaticon.com/128/1051/1051328.png" alt="HTML Image" class="center"></div>
-            <div id="CSSlang" onclick=swapCards(CSSlang)>CSS
-            <br><br><img src="https://cdn-icons-png.flaticon.com/128/732/732007.png" alt="CSS Image" class="center"></div>
-        </div>
+    <!-- Add Testimonies / Recommenders section -->
+    <div id="formDiv">
+        <h2 class="header">Say Hello</h2>
+        <form>
+            <input type="text" placeholder="Name"><br>
+            <input type="email" placeholder="Email"><br>
+            <textarea placeholder="Message" minlength="10"></textarea><br>
+            <button id="formButton">Send</button>
+        </form>
     </div>
-
-    <div id="projects"></div>
-    <h1 style="width: 900px; margin: 100px auto auto; margin-bottom: -70px; color: #92BA92">My Latest Works</h1>
-    <div class="project one" style="left: 30px;" onmouseover="writeProjNum(1)" onmouseleave="hideProjNum(1)">
-        <h1 class="projectNumOdd" id="proj1">01</h1>
-        <div class="projectTextOdd" id="proj1bg">
-            <h2>Architecture Tracking System</h2>
-            <p><i>Internship Project</i></p>
-            <button><a href="HTML/BoFA.html">More Details</a></button>
-        </div>
-
-    </div>
-    <div class="project two" style="right: 30px;" onmouseover="writeProjNum(2)" onmouseleave="hideProjNum(2)">
-        <h1 class="projectNumEven" id="proj2">02</h1>
-        <div class="projectTextEven" id="proj2bg">
-            <h2>Online Logic Gate Simulator</h2>
-            <p><i>Personal Project</i></p>
-            <button><a href="HTML/logicGates.html">More Details</a></button>
-            <button><a href="../Projects/logicGateApp/logic.html">See Live Site</a></button>
-        </div>
-    </div> 
-    <div class="project three" style="left: 30px;" onmouseover="writeProjNum(3)" onmouseleave="hideProjNum(3)">
-        <h1 class="projectNumOdd" id="proj3">03</h1>
-        <div class="projectTextOdd" id="proj3bg">
-            <h2>8-Bit CPU Design</h2>
-            <p><i>School Project</i></p>
-            <button><a href="HTML/CPU.html">More Details</a></button>
-        </div>
-    </div>
-    <div class="project four" style="right: 30px;" onmouseover="writeProjNum(4)" onmouseleave="hideProjNum(4)">
-        <h1 class="projectNumEven" id="proj4">04</h1>
-        <div class="projectTextEven" id="proj4bg">
-            <h2>Traveling Knight Problem</h2>
-            <p><i>Personal Project [WIP]</i></p>
-            <button><a href="HTML/travelingKnight.html">More Details</a></button>
-        </div>
-    </div>
-
-    <div id="topBar">
-        <img src="sources/img/logo.png" alt="My Logo" width="125px">
-        <nav id="mainNav">
-            <a href="#top">Home</a>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#tech">Tech</a>
-            <a href="#projects">Projects</a>
-        </nav>
-    </div>
-    </body>
-    <footer>
-        <a href="#top"><img src="sources/img/logo.png" alt="My Logo" width="200px" title="Scroll to top"></a><br>
-        <div id="footerSocials">
-            <a href="https://github.com/LWeisenhorn"><img src="sources/img/github.png" alt="Github Logo" width="30px"></a>
-            <a href="https://www.linkedin.com/in/luke-weisenhorn/"><img src="sources/img/linkedin.png" alt="LinkedIn Logo" width="30px"></a>
-            <a href="mailto:lukeweisenhorn@gmail.com"><img src="sources/img/email.png" alt="LinkedIn Logo" width="30px"></a>
-        </div>
-        <p>Copyright 2022 Luke Weisenhorn</p>
+    <footer> 
+        <p>ⓒ 2022 Luke Weisenhorn. All Rights Reserved</p>
+        <span>
+            <a href="https://www.linkedin.com/in/luke-weisenhorn/"><img src="images/icons/In-White-40.png" alt="LinkedIn" width="25px"></a>
+            <a href="https://github.com/LWeisenhorn"><img src="images/icons/GitHub-Mark-Light-32px.png" alt="GitHub" width="25px"></a>
+            <a href="mailto:lukeweisenhorn@gmail.com"><img src="images/icons/gmail.png" alt="Email" width="25px"></a>
+        </span>
     </footer>
+</body>
 </html>
