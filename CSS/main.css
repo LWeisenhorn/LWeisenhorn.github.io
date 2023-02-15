@@ -197,10 +197,11 @@ footer {
     border-radius: 50px;
 }
 #timelineBar {
-    float: left;
     position: relative;
-    left: 35.25vw;
-    top: 7vh;
+    display: flex;
+    justify-content: center;
+    right: 14vw;
+    top: 35vh;
 }
 .repoButton {
     padding-left: 20px;
