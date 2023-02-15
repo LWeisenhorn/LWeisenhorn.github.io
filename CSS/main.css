@@ -101,7 +101,7 @@ p > a:hover {
     padding-right: 5px;
 }
 #toolsDiv {
-    margin-top: 50px;
+    margin-top: 75px;
     text-align: left;
 }
 #toolsTitle > h2 {
@@ -131,7 +131,22 @@ p > a:hover {
     margin-left: 75px;
     margin-bottom: -10px;
 }
-#formDiv, #timelineDiv, #toolsTitle {
+#researchDiv {
+    text-align: left;
+}
+#researchDiv > h2 {
+    margin-top: 75px;
+    color: white;
+    width: 95px;
+    border-bottom: 4px solid #D2CFCD;
+}
+#researchDiv > div > .subheader {
+    margin-top: -15px;
+}
+#researchDetails {
+    margin-top: -10px;
+}
+#formDiv, #timelineDiv, #toolsTitle, #researchDiv {
     margin: auto;
     width: 550px;
 }
@@ -181,6 +196,12 @@ footer {
     height: 15px;
     border-radius: 50px;
 }
+#timelineBar {
+    float: left;
+    position: relative;
+    left: 35vw;
+    top: 7vh;
+}
 .repoButton {
     padding-left: 20px;
     padding-right: 20px;
@@ -192,3 +213,4 @@ footer {
 .repoButton:hover {
     background-color: #BEE5B0;
 }
+
