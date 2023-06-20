@@ -2,6 +2,7 @@ body {
     background-color: #221e16;
     color: #D2CFCD;
     text-align: center;
+    overflow-x: visible;
 }
 .header {
     color: white;
@@ -14,6 +15,7 @@ body {
 #introductionBox {
     margin: auto;
     width: 550px;
+    max-width: 100vw;
     font-weight: bold;
 }
 #introductionBox > h1 {
@@ -30,17 +32,17 @@ p > a:hover {
     border-bottom: 1px solid #BEE5B0;
 }
 #toolsFlexBox {
-    width: 900px;
+    align-items: center;
     justify-content: center;
 }
 #toolsFlexBox > div {
     text-align: center;
-    width: 125px;
-    height: 125px;
+    width: 20vh;
+    height: 12vh;
 }
 #toolsFlexBox > div > p {
     position: relative;
-    top: 10px;
+    top: 00px;
 }
 #toolsFlexBox > div > img {
     position: relative;
@@ -49,21 +51,30 @@ p > a:hover {
 #toolsFlexBox > div:hover {
     border: 3px solid #D2CFCD;
 }
+#projects > div {
+    min-width: 30%;
+    min-height: 30%;
+}
 .flex-container {
+    padding: none;
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-wrap: nowrap;
     margin: auto;
-    width: 50vw;
+    width: 100%;
+    max-width: 950px;
 }
 .flex-container > div {
     background-color: #221e16;
-    border: 3px solid #D2CFCD;
-    border-radius: 10px;
-    width: 280px;
-    height: 250px;
-    margin: 10px;
+    width: 15vw;
+    height: 14vw;
+    margin: 1vw;
     text-align: left;
     font-size: 16px;
+    overflow: hidden;
+    border: 3px solid #D2CFCD;
+    border-radius: 10px;
 }
 .flex-container > div:hover {
     border: 3px solid white;
@@ -71,18 +82,18 @@ p > a:hover {
 .flex-container > div > h3 {
     color: white;
     margin-left: 10px;
-    margin-top: -95px;
+    margin-top: -10vh;
 }
 .flex-container > div > h3, .flex-container > div > p {
-    margin-bottom: -10px;
+    margin-bottom: -1vh;
 
 }
 .lang-text {
-    margin-left: 20px;
+    margin-left: 1vw;
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
-    margin-right: -10px;
+    margin-right: -1vw;
     border: 2px solid #D2CFCD;
     border-radius: 5px;
 }
@@ -101,8 +112,12 @@ p > a:hover {
     padding-right: 5px;
 }
 #toolsDiv {
+    width: 100vw;
     margin-top: 75px;
     text-align: left;
+}
+#toolsFlexBox > div > p {
+    font-size: 1.5vh;
 }
 #toolsTitle > h2 {
     width: 180px;
@@ -121,6 +136,7 @@ p > a:hover {
     border: 2px solid #BEE5B0;
 }
 #timelineDiv {
+    max-width: 100vw;
     text-align: left;
 }
 #timelineDiv > h2 {
@@ -132,6 +148,7 @@ p > a:hover {
     margin-bottom: -10px;
 }
 #researchDiv {
+    max-width: 100vw;
     text-align: left;
 }
 #researchDiv > h2 {
